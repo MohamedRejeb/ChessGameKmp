@@ -1,21 +1,22 @@
-This is a Kotlin Multiplatform project targeting Android, iOS, Web, Desktop.
+Part 1 of Kotlin Design Patterns & Best Practices series.
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+What this series is about?:
+- In this series we are going to see how we can use different design patterns and best practices in real life projects.
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+What are going to build?:
+- In this part 1 we are going to build a chess game. The chess game rules are a really good example to use different design patterns and best practices and improve your thinking.
 
+What are going to use?:
+- OOP (Inheritance…)
+- Functional programming
+- TDD (Only for a single piece)
+- Factory method design pattern
+- Builder design pattern
+- DSLs
+- …
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html),
-[Compose Multiplatform](https://github.com/JetBrains/compose-multiplatform/#compose-multiplatform),
-[Kotlin/Wasm](https://kotl.in/wasm/)…
+Figma assets:
+https://www.figma.com/community/file/971870797656870866/chess-simple-assets
 
-We would appreciate your feedback on Compose/Web and Kotlin/Wasm in the public Slack channel [#compose-web](https://slack-chats.kotlinlang.org/c/compose-web).
-If you face any issues, please report them on [GitHub](https://github.com/JetBrains/compose-multiplatform/issues).
-
-You can open the web application by running the `:composeApp:wasmJsBrowserDevelopmentRun` Gradle task.
+Youtube video:
+https://youtu.be/G6FY8jHiDVY?si=6FHcGttuRLB0lBJ4
